@@ -28,4 +28,4 @@ public:
     }
 };
 
-#endif // NAIVE_SEARCH_H
+#endif
