@@ -321,4 +321,4 @@ public:
     }
 };
 
-#endif // BENCHMARK_H
+#endif
