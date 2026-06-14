@@ -74,4 +74,4 @@ public:
     }
 };
 
-#endif // RESOURCE_MONITOR_H
+#endif
