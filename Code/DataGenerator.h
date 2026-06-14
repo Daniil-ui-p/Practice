@@ -171,4 +171,4 @@ public:
     }
 };
 
-#endif // DATA_GENERATOR_H
+#endif
