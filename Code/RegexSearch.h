@@ -42,4 +42,4 @@ public:
     }
 };
 
-#endif // REGEX_SEARCH_H
+#endif
