@@ -179,4 +179,4 @@ public:
     const std::vector<std::string>& getPatterns() const { return patterns; }
 };
 
-#endif // AHO_CORASICK_H
+#endif
