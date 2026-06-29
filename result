@@ -1,1 +1,89 @@
+================================================================
+  AHO-CORASICK ALGORITHM - PERFORMANCE RESEARCH
+================================================================
 
+Loaded: text.txt (999999976 chars, 953.67 MB)
+Short patterns: 38
+Long patterns: 10
+
+================================================================
+TASK 1: NONDETERMINISTIC FINITE AUTOMATON (NFA)
+================================================================
+NFA built: 104 nodes
+Build time: 0 ms
+
+================================================================
+TASK 2: DETERMINISTIC FINITE AUTOMATON (DFA)
+================================================================
+DFA compiled: 104 nodes
+Compile time: 0 ms
+
+================================================================
+TASK 3: DYNAMIC PROGRAMMING (CACHE OPTIMIZATION)
+================================================================
+Method              Time(ms)    CPU(ms)     Memory(KB)  Matches   
+------------------------------------------------------------------
+No cache            286.34      286.00      0.0         26861     
+With cache          230.50      231.00      0.0         26861     
+
+Cache speedup: 1.24x
+
+================================================================
+TASK 4: COMPARISON WITH NAIVE SEARCH
+================================================================
+Algorithm                Time(ms)    Speedup   Matches   
+---------------------------------------------------------
+Aho-Corasick (cached)    200.08      0.86      x26861     
+Aho-Corasick (no cache)  331.47      0.52      x26861     
+Naive Search             171.69      1.00x     26861     
+
+Note: std::regex not shown (100x slower)
+
+================================================================
+TASK 5: SHORT PATTERNS (<=50 chars) IN TEXT
+================================================================
+Patterns: 38
+Text size: 999999976 characters
+Search time: 184641.06 ms
+CPU time: 184641.0 ms
+Memory: 0.00 MB
+Matches: 25331199
+
+================================================================
+TASK 6: LONG PATTERNS (>=1000 chars) IN TEXT
+================================================================
+Patterns: 10
+Automaton nodes: 14501
+Search time: 168044.19 ms
+CPU time: 168044.0 ms
+Memory: 211.58 MB
+Matches: 10
+
+================================================================
+TASK 7-8-9: RESOURCE USAGE SUMMARY
+================================================================
+Metric                   Short patterns    Long patterns     
+-------------------------------------------------------------
+Time (ms)                184641.06         168044.19         
+CPU time (ms)            184641.0          168044.0          
+Memory (MB)              0.00              211.58            
+Matches                  25331199          10                
+
+================================================================
+TASK 10: COMPARATIVE CHARTS
+================================================================
+
+Time comparison (ms):
+
+Aho-Corasick (cached)     | 0.0 ms
+Aho-Corasick (no cache)   | 0.0 ms
+Naive Search              | 0.0 ms
+
+Memory comparison (MB):
+
+Short patterns            | 0.0 MB
+Long patterns             |################################################## 211.6 MB
+
+================================================================
+ALL TASKS COMPLETED
+================================================================
